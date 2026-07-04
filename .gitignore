@@ -1,0 +1,87 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+**/node_modules/
+
+# =========================
+# Environment files
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Build folders
+# =========================
+dist/
+build/
+coverage/
+
+# =========================
+# Vite
+# =========================
+.vite/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# SonarQube
+# =========================
+.scannerwork/
+.sonar/
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# =========================
+# Kubernetes generated files
+# =========================
+*.secret.yaml
+*.secret.yml
+
+# =========================
+# Runtime files
+# =========================
+tmp/
+temp/
+cache/
+
+# =========================
+# Testing
+# =========================
+.nyc_output/
+jest-cache/
+
+
+
+# =========================
+# PDF/Generated Reports
+# =========================
+generated/
+reports/
+exports/
