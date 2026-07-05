@@ -128,3 +128,6 @@ docker compose up --build
 
 Everything else — auth flow, models, aggregation, search, filters, tags, PDF generation, admin
 analytics — is generated and wired end-to-end.
+Deployment in render
+Backend:https://news-monitor-backend.onrender.com/
+Frontend:https://news-monitor-frontend.onrender.com/
