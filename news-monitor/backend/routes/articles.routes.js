@@ -16,7 +16,7 @@ const DEFAULT_CATEGORIES = [
 router.get('/dashboard', requireAuth, async (req, res) => {
   try {
     const startOfDay = new Date();
-    startOfDay.setDate(startOfDay.getDate() - 7);
+    startOfDay.setDate(startOfDay.getDate() - 1);
     const categoryParam = req.query.category;
     const categories = categoryParam ? [categoryParam] : DEFAULT_CATEGORIES;
 

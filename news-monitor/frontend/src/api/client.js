@@ -38,8 +38,10 @@ api.interceptors.response.use(
         queue.forEach((p) => p.resolve(data.accessToken));
         queue = [];
         original.headers.Authorization = `Bearer ${data.accessToken}`;
+        console.log(original);
         return api(original);
       } catch (refreshErr) {
+        console.log(refreshErr);
         queue.forEach((p) => p.reject(refreshErr));
         queue = [];
         store.dispatch(logout());

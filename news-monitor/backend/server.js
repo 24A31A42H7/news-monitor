@@ -44,7 +44,10 @@ app.use('/api/search', searchRoutes);
 app.use('/api/tags', tagsRoutes);
 app.use('/api/reports', reportsRoutes);
 app.use('/api/admin', adminRoutes);
-
+//default route
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully 🚀");
+});
 // --- 404 handler ---
 app.use('/api', (req, res) => res.status(404).json({ error: 'Route not found' }));
 

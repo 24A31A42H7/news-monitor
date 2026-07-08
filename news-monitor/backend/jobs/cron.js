@@ -16,7 +16,7 @@ const DEFAULT_QUERIES = [
  */
 function scheduleNewsFetch() {
   cron.schedule(
-  '0 6 * * *',
+  '32 14 * * *',
   async () => {
     console.log('[cron] Starting scheduled news fetch...');
 
