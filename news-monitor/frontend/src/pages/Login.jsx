@@ -17,6 +17,7 @@ export default function Login() {
     setError('');
     try {
       const { data } = await api.post('/auth/google', { idToken: credentialResponse.credential });
+      console.log(data.accessToken);
       dispatch(setCredentials({ user: data.user, accessToken: data.accessToken }));
       navigate('/dashboard');
     } catch (err) {
